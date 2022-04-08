@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ui.TypeFragment"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/edu_img"
+        android:layout_width="220sp"
+        android:layout_height="220sp"
+        android:src="@drawable/training"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150sp"
+
+        />
+    <ImageView
+        android:id="@+id/std_img"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/graduated"
+        app:layout_constraintStart_toStartOf="@id/edu_img"
+        app:layout_constraintTop_toBottomOf="@id/edu_img"
+        android:layout_marginTop="50sp"
+
+        />
+    <ImageView
+        android:id="@+id/dr_img"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/teacher"
+        app:layout_constraintStart_toStartOf="@id/edu_img"
+        app:layout_constraintTop_toBottomOf="@id/std_img"
+        android:layout_marginTop="30sp"
+
+        />
+
+
+
+
+    <CheckBox
+        android:id="@+id/std_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/student"
+        android:buttonTint="@color/toolbarcolor"
+        android:layout_marginTop="50sp"
+        app:layout_constraintStart_toEndOf="@id/std_img"
+        app:layout_constraintTop_toBottomOf="@id/edu_img"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+    <CheckBox
+        android:id="@+id/dr_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructor"
+        android:buttonTint="@color/toolbarcolor"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="@id/std_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/std_checkbox"
+        android:textSize="30sp"
+        />
+
+    <ImageButton
+        android:id="@+id/next_btn"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/nextbutton"
+        android:layout_margin="25sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

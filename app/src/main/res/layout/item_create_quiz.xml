@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardquiz"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:cardCornerRadius="25sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txt_unused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Q99"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:layout_marginTop="0sp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardq"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="@id/txt_unused"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent=".2"
+                app:cardCornerRadius="25sp"
+                android:layout_marginHorizontal="35sp"
+                android:layout_marginTop="30sp"
+                android:backgroundTint="@color/white"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/question_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="12sp"
+                        android:hint="@string/the_question"
+                        android:gravity="center"
+                        android:background="@drawable/edittext2"
+                        android:layout_margin="10sp"
+                        android:textColorHint="@color/black"
+                        android:backgroundTint="@color/white"
+
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carda1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/carda2"
+                app:layout_constraintTop_toBottomOf="@id/cardq"
+                app:layout_constraintHeight_percent=".2"
+                app:layout_constraintWidth_percent="0.4"
+                app:cardCornerRadius="25sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="30sp"
+                android:backgroundTint="@color/white"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/ans1_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="12sp"
+                        android:hint="@string/answer_1"
+                        android:gravity="center"
+                        android:background="@drawable/edittext3"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10sp"
+                        android:textColorHint="@color/black"
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carda2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/carda1"
+                app:layout_constraintBottom_toBottomOf="@id/carda1"
+                app:layout_constraintHeight_percent=".2"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardCornerRadius="25sp"
+                android:layout_marginHorizontal="10sp"
+                android:backgroundTint="@color/white"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/ans2_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="12sp"
+                        android:hint="@string/answer_2"
+                        android:gravity="center"
+                        android:background="@drawable/edittext3"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10sp"
+                        android:textColorHint="@color/black"
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carda3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/carda4"
+                app:layout_constraintTop_toBottomOf="@id/carda1"
+                app:layout_constraintHeight_percent=".2"
+                app:layout_constraintWidth_percent="0.4"
+                app:cardCornerRadius="25sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="20sp"
+                android:backgroundTint="@color/white"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/ans3_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="12sp"
+                        android:hint="@string/answer_3"
+                        android:gravity="center"
+                        android:background="@drawable/edittext3"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10sp"
+                        android:textColorHint="@color/black"
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carda4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/carda3"
+                app:layout_constraintBottom_toBottomOf="@id/carda3"
+                app:layout_constraintHeight_percent=".2"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardCornerRadius="25sp"
+                android:layout_marginHorizontal="10sp"
+                android:backgroundTint="@color/white"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/ans4_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="12sp"
+                        android:hint="@string/answer_4"
+                        android:gravity="center"
+                        android:background="@drawable/edittext3"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10sp"
+                        android:textColorHint="@color/black"
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/correct_ans_edit"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="14sp"
+                app:layout_constraintWidth_percent="0.4"
+                android:hint="@string/correct_answer"
+                android:gravity="center"
+                android:background="@drawable/edittext2"
+                android:layout_margin="10sp"
+                android:textColorHint="@color/black"
+                android:inputType="number"
+                android:digits="1234"
+                android:maxLength="1"
+                android:backgroundTint="@color/gray"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

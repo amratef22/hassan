@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.teacher.BaseAddQuizFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHeight_percent=".3"
+        android:layout_marginTop="-20sp"
+        app:cardCornerRadius="25sp"
+        app:cardBackgroundColor="@color/toolbarcolor"
+        >
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="50sp"
+        app:layout_constraintHeight_percent=".25"
+        app:cardCornerRadius="15sp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/add_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/add_new_quiz"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/toolbarcolor"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/quiz_name_edit"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_txt"
+                app:layout_constraintWidth_percent=".8"
+                android:background="@drawable/edittext2"
+                android:layout_marginTop="15sp"
+                android:hint="@string/quiz_name"
+                android:gravity="center"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/qno_edit"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/quiz_name_edit"
+                app:layout_constraintWidth_percent=".8"
+                android:background="@drawable/edittext2"
+                android:layout_marginTop="10sp"
+                android:hint="@string/no_of_questions"
+                android:gravity="center"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="2"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createq_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintWidth_percent="0.7"
+        app:cornerRadius="5sp"
+        android:text="@string/create"
+        android:backgroundTint="@color/toolbarcolor"
+        android:layout_marginTop="100sp"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

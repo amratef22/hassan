@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279608559251",
+    "project_id": "classroom-a140a",
+    "storage_bucket": "classroom-a140a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279608559251:android:5f23df0c028bb7a169ef66",
+        "android_client_info": {
+          "package_name": "com.abdo.eduapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279608559251-tmf9e6q76sbklnc9bljf4vehv9lknga3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xrpGIJ1bjQAbIiLGvuxu8bm326FkcgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279608559251-tmf9e6q76sbklnc9bljf4vehv9lknga3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
