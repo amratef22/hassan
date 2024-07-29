@@ -274,35 +274,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.2"
-        android:layout_marginTop="20dp"
+        android:layout_weight="1.3"
         android:orientation="horizontal"
         android:weightSum="3"
         android:background="@color/white"
         android:gravity="center"
-        android:layout_margin="15dp"
+        android:layout_marginTop="20sp"
 
         >
-        <EditText
-            android:layout_weight="2"
-            android:id="@+id/std_attend_edit"
-            android:layout_width="0dp"
-            android:layout_height="60sp"
-            android:hint="@string/attendance_code"
-            android:gravity="center"
-            android:inputType="number"
-            android:digits="0123456789"
-            android:textColorHint="@color/black"
-            android:background="@drawable/edittext2"
-
-            />
-        <ImageButton
+        <androidx.cardview.widget.CardView
             android:id="@+id/std_attend_btn"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:background="@drawable/check"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="20dp"
-            />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/approve"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="5sp"
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="attendance"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/toolbarcolor"
+                />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 </LinearLayout>

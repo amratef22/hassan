@@ -14,6 +14,7 @@ import com.abdo.eduapp.R;
 import com.abdo.eduapp.databinding.FragmentStdCourseBinding;
 import com.abdo.eduapp.models.SharedModel;
 import com.abdo.eduapp.ui.chat.ChatFragment;
+import com.abdo.eduapp.ui.student.attendance.AttendFragment;
 import com.abdo.eduapp.ui.student.grades.StudentGradesFragment;
 import com.abdo.eduapp.ui.student.matrial.MatrialsFragment;
 import com.abdo.eduapp.utils.Const;
@@ -67,20 +68,15 @@ public class StdCourseFragment extends Fragment {
         binding.stdAttendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String code = binding.stdAttendEdit.getText().toString().trim() ;
-                if(code.isEmpty()){
-                    binding.stdAttendEdit.setError(getString(R.string.Required_msg));
-                }
-                else{
-
-                    check(code);
-                }
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame,new AttendFragment(), "att")
+                        .addToBackStack("att").commit();
             }
         });
         binding.stdSolveQuizBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame,new QuizzesFragment(), "quiz").addToBackStack("quiz").commit();
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame,new QuizzesFragment(), "quiz")
+                        .addToBackStack("quiz").commit();
             }
         });
 
@@ -136,7 +132,6 @@ public class StdCourseFragment extends Fragment {
             public void onSuccess(Void aVoid) {
 
                 Toast.makeText(requireContext(), R.string.suc , Toast.LENGTH_SHORT).show();
-                binding.stdAttendEdit.setText("");
             }
         });
 

@@ -76,4 +76,11 @@ dependencies {
 
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 
+
+    //qr
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    //scanner
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+
 }

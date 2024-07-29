@@ -66,6 +66,8 @@ public class CreateQuizFragment extends Fragment {
 
 
     private void onclicks(){
+
+
         adapter.setList(list);
         binding.recyclerViewCreateQuiz.setAdapter(adapter);
 
